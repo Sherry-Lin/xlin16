@@ -14,7 +14,7 @@ body:
 - type: dropdown
   id: usage
   attributes:
-    label: What's the usage scenario when you are seeing the problem?
+    label: What's the usage scenario would be benifited?
     multiple: true
     options:
       - Transcode for media delivery
