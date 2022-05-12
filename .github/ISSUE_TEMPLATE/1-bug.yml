@@ -1,25 +1,39 @@
-name: Video Processing Bug
-description: Use template to submit a VP Bug
-title: "[VP]: "
-labels: ["VP"]
+name: Bug Issue
+description: Use template to submit a Bug
+title: "[Bug]: "
 assignees:
-  - FurongZhang
-  - MicroYY
+  - XinfengZhang
+  - Jexu
+  - Xiaogangli-intel
 body:
-- type: checkboxes
+- type: dropdown
+  id: component
   attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the bug you encountered.
+    label: Which component impacted?
+    multiple: true
     options:
-    - label: I have searched the existing issues
-      required: true
+      - Decode
+      - Encode
+      - Video Processing
+      - Build
+      - Not sure
+- type: dropdown
+  id: regression
+  attributes:
+    label: Is it regression? Good in old configuration?
+    multiple: false
+    options:
+      - Yes, it's good in old version
+      - No, this issue exist a long time
 - type: textarea
   attributes:
     label: What happened?
-    description: Please provide reproduce steps and sample cmdline if possible which help us to debug it.
+    description: |
+      Please provide reproduce steps and sample cmdline if possible which help us to debug it.
+      If it's regression, please provide good/bad commit/configuration.
     placeholder: |
       1. In Linux or Browser or Applications...
-      2. With this config...
+      2. With libva/libva-utils/gmmlib/media-driver version...
       3. Run '...'
       4. See error...
   validations:
