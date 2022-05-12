@@ -1,4 +1,5 @@
 name: Decode Bug
+description: Use template to submit a Decode Bug
 title: "[Decode]: "
 labels: ["Decode"]
 assignees:
