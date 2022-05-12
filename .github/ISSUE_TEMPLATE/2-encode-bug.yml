@@ -1,4 +1,5 @@
 name: Encode Bug
+description: Use template to submit a Encode Bug
 title: "[Encode]: "
 labels: ["Encode"]
 assignees:

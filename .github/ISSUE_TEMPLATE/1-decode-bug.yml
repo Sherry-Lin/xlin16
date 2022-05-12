@@ -1,5 +1,4 @@
-name: Decode Bug Report
-description: File a Decode Bug
+name: Decode Bug
 title: "[Decode]: "
 labels: ["Decode"]
 assignees:

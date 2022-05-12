@@ -1,4 +1,5 @@
 name: Feature Request
+description: Use template to request a new feature
 title: "[Feature]: "
 labels: ["Feature Request"]
 assignees:

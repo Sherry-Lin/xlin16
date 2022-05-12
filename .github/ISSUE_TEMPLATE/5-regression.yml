@@ -1,4 +1,5 @@
 name: Regression
+description: Use template to submit a regression
 title: "[Regression]: "
 body:
 - type: textarea

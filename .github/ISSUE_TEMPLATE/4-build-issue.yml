@@ -1,4 +1,5 @@
 name: Build Bug
+description: Use template to submit a Build Bug
 title: "[Build]: "
 labels: ["Build"]
 assignees:
