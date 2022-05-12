@@ -27,6 +27,8 @@ body:
       - Content Creation
       - Game Streaming
       - Others
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: What impacted?
