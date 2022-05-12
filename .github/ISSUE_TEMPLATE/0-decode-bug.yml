@@ -24,7 +24,7 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: browsers
+  id: usage
   attributes:
     label: What's the usage scenario when you are seeing the problem?
     multiple: true
@@ -65,7 +65,7 @@ body:
   validations:
     required: false
 - type: dropdown
-  id: browsers
+  id: contribute
   attributes:
     label: Do you want to contribute a patch to fix the issue?
     multiple: false
