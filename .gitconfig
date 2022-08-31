@@ -1,0 +1,15 @@
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	cp = cherry-pick
+	cl = checkout . && git clean -xdf
+	hist = log --pretty=\"%C(yellow)%h%Creset -%C(red)%d%C(white) %s %C(bold blue)(%cd) %Cblue<%an>\" --graph --date=short --remotes=origin --date-order
+	oh = log --pretty=\"%C(yellow)%h%Creset -%C(red)%d%C(white) %s %C(bold blue)(%cd) %Cblue<%an>\" --graph --date=\"format-local:%Y-%m-%dT%H-%M-%S\" --remotes=origin --date-order
+	gh = log --pretty=\"%C(yellow)%h%Creset -%C(red)%d%C(white) %s %C(bold blue)(%cd) %Cblue<%an>\" --graph --date=\"format-local:%Y-%m-%dT%H-%M-%S\" --remotes=gerrit --date-order
+	gp = grep -p --break --heading -n
+	lh = log --pretty=\"%C(yellow)%h%Creset -%C(red)%d%C(white) %s %C(bold blue)(%cd) %Cblue<%an>\" --graph --date=\"format-local:%Y-%m-%dT%H-%M-%S\" --branches=* --date-order
+	ol = log --pretty=\"%C(yellow)%h%Creset -%C(red)%d%C(white) %s %C(bold blue)(%cd) %Cblue<%an>%Cblue<%cn>\" --date=\"format-local:%Y-%m-%dT%H-%M-%S\"
+	ols = log --pretty=\"%C(yellow)%h%Creset -%C(red)%d%C(white) %s %C(bold blue)(%cd) %Cblue<%an>%Cblue<%cn>\" --date=\"format-local:%Y-%m-%dT%H-%M-%S\" --stat
+	squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"
